@@ -16,7 +16,7 @@ class RegisterController extends Controller
         // Ambil SEMUA paket yang berstatus aktif untuk opsi dropdown
         $packages = Package::where('is_active', true)->get();
 
-        return view('landing', compact('packages'));
+        return view('regist', compact('packages'));
     }
 
     public function process(Request $request)

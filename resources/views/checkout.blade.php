@@ -1,48 +1,6 @@
-<!DOCTYPE html>
-<html lang="id">
+@extends('layouts.app')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instruksi Pembayaran - Ayo Fasih!</title>
-
-    <!-- Google Fonts & Tailwind CSS CDN -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap"
-        rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-                    },
-                    colors: {
-                        brand: {
-                            950: '#0f0728',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-</head>
-
-<body
-    class="bg-brand-950 text-slate-100 font-sans min-h-screen flex flex-col justify-between selection:bg-purple-500 selection:text-white">
-
-    <!-- Header / Navbar Minimalis -->
-    <header class="border-b border-purple-900/30 py-6">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <a href="{{ route('landing') }}" class="text-2xl font-extrabold tracking-tight inline-block">
-                <span class="text-white">Ayo</span>
-                <span class="text-purple-400">Fasih!</span>
-            </a>
-        </div>
-    </header>
-
+@section('content')
     <!-- Main Content Checkout -->
     <main class="py-12 px-4 flex-grow flex items-center justify-center">
         <div
@@ -169,15 +127,9 @@
 
         </div>
     </main>
+@endsection
 
-    <!-- Footer Minimalis -->
-    <footer class="py-6 border-t border-purple-900/20 text-center text-xs text-slate-500">
-        &copy; {{ date('Y') }} Ayo Fasih! All rights reserved.
-    </footer>
 
-</body>
-
-</html>
 
 <!-- Script Javascript Clipboard Copy -->
 <script>
