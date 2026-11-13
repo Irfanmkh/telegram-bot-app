@@ -16,7 +16,7 @@ use Illuminate\Notifications\Notifiable;
         'telegram_chat_id',
         'telegram_username', 'role'])]
 #[Hidden(['password', 'remember_token'])]
-class User extends Authenticatable
+class User extends Authenticatable implements FilamentUser
 {
     /** @use HasFactory<UserFactory> */
     use HasFactory;
