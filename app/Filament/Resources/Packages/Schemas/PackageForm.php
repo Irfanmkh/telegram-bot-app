@@ -22,6 +22,11 @@ class PackageForm
                     ->required()
                     ->numeric()
                     ->prefix('Rp'),
+                    TextInput::make('telegram_group_id')
+    ->label('ID Grup / Channel Telegram')
+    ->placeholder('-1001234567890')
+    ->helperText('Diawali -100. Kosongkan jika ingin memakai ID grup default dari Settings.')
+    ->maxLength(50),
                 Toggle::make('is_active')
                     ->required(),
             ]);

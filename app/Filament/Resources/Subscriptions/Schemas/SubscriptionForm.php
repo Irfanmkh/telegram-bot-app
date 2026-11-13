@@ -16,6 +16,9 @@ class SubscriptionForm
                 TextInput::make('user_id')
                     ->required()
                     ->numeric(),
+                TextInput::make('package_id')
+                    ->required()
+                    ->numeric(),
                 Select::make('status')
                     ->options(['active' => 'Active', 'expired' => 'Expired'])
                     ->default('active')

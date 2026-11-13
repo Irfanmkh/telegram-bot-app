@@ -8,6 +8,7 @@ use Filament\Actions\EditAction;
 use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
+use Illuminate\Support\Facades\Storage;
 
 class PaymentsTable
 {
@@ -32,7 +33,12 @@ class PaymentsTable
                     ->sortable(),
                 TextColumn::make('status')
                     ->badge(),
-                ImageColumn::make('receipt_image'),
+                ImageColumn::make('receipt_image')
+    ->label('Bukti Transfer')
+    ->disk('public')
+    // ->url(fn ($record) => $record->receipt_image ? asset('storage/' . $record->receipt_image) : null)
+    ->url(fn ($record) => $record->receipt_image ? Storage::url('/' . $record->receipt_image) : null)
+    ->openUrlInNewTab(),
                 TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()

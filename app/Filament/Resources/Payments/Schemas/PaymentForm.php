@@ -35,7 +35,13 @@ class PaymentForm
                     ->default('pending')
                     ->required(),
                 FileUpload::make('receipt_image')
-                    ->image(),
+    ->label('Bukti Transfer')
+    ->disk('public')
+    ->directory('receipts')
+    ->image()
+    ->openable()     // Admin bisa klik untuk membuka gambar ukuran penuh di tab baru
+    ->downloadable() // Admin bisa download struk
+    ->columnSpanFull(),
             ]);
     }
 }

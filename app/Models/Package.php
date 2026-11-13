@@ -13,6 +13,7 @@ class Package extends Model
         'name',
         'original_price',
         'price',
+        'telegram_group_id',
         'is_active',
     ];
 
@@ -20,6 +21,7 @@ class Package extends Model
         'original_price' => 'integer',
         'price' => 'integer',
         'is_active' => 'boolean',
+        'telegram_group_id' => 'string',
     ];
 
     public function payments(): HasMany

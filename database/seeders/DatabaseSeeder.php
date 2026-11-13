@@ -20,7 +20,15 @@ class DatabaseSeeder extends Seeder
 
         Setting::updateOrCreate(['key' => 'telegram_bot_username'], ['value' => 'NamaBotKamu_bot']);
         Setting::updateOrCreate(['key' => 'telegram_bot_token'], ['value' => '8123456789:AAxxxx...']);
+        Setting::updateOrCreate(['key' => 'main_telegram_group_id'], ['value' => '8123456789:AAxxxx...']);
+        Setting::updateOrCreate(['key' => 'ocr_space_api_key'], ['value' => 'K83...']);
         Setting::updateOrCreate(['key' => 'bank_info'], ['value' => "BCA: 1234567890 a.n. Owner\nMandiri: 0987654321 a.n. Owner"]);
+
+        Setting::updateOrCreate(
+            ['key' => 'promo_all_access'],
+            ['value' => '1']
+        );
+
 
 
 

@@ -17,6 +17,9 @@ class SubscriptionsTable
                 TextColumn::make('user_id')
                     ->numeric()
                     ->sortable(),
+                TextColumn::make('package_id')
+                    ->numeric()
+                    ->sortable(),
                 TextColumn::make('status')
                     ->badge(),
                 TextColumn::make('start_date')

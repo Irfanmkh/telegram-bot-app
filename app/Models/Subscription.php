@@ -8,5 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Subscription extends Model
 {
     //
-    protected $fillable = ['name', 'original_price', 'price', 'is_active'];
+    protected $fillable = ['name', 'start_date', 'end_date', 'status', 'user_id', 'package_id'];
+
+    protected function casts(): array
+    {
+        return [
+            'start_date' => 'date',
+            'end_date' => 'date',
+        ];
+    }
 }
