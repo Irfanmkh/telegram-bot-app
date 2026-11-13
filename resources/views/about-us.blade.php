@@ -40,10 +40,10 @@
                     <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">Global Speaking Partner</h3>
                     <p class="text-slate-400 text-base leading-relaxed">
                         Pembelajaran berbasis modul terstruktur yang diimbangi dengan <strong
-                            class="text-white font-medium">praktek langsung setiap 2 sampai 3 bulan sekali</strong>. Kamu
+                            class="text-white font-medium">praktek langsung </strong>. Kamu
                         akan berlatih berinteraksi secara real-time bersama *speaking partner* kami dari <span
-                            class="text-slate-200 font-semibold border-b border-slate-600">India, Thailand, dan Arab
-                            Saudi</span>.
+                            class="text-slate-200 font-semibold border-b border-slate-600">Arab Saudi, India, dan
+                            Sudan</span>.
                     </p>
                 </div>
                 <!-- Globe / Connect Icon -->

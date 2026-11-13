@@ -7,9 +7,9 @@
             <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-white mb-4">
                 Visi & Misi Kami
             </h1>
-            <p class="text-base sm:text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
+            {{-- <p class="text-base sm:text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
                 Tujuan besar yang memandu setiap langkah kami dalam merevolusi cara belajar bahasa Inggris.
-            </p>
+            </p> --}}
         </div>
     </section>
 

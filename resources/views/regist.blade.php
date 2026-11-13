@@ -2,9 +2,9 @@
 
    @section('content')
        <!-- Form Registrasi -->
-       <section id="register" class="py-24 bg-[#0A0E17] border-t border-slate-800/50">
+       <section id="register" class=" bg-[#0A0E17] border-t border-slate-800/50">
            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-               <div class="text-center mb-12">
+               <div class="text-center mb-8 mt-9">
                    <h2 class="text-3xl font-bold text-white">Formulir Pendaftaran</h2>
                    <p class="text-slate-400 mt-3 text-base">Isi data dirimu di bawah ini untuk memulai langkah belajar di
                        Ayo
@@ -49,8 +49,8 @@
                                <option value="" disabled selected>-- Pilih Paket Pembelajaran --</option>
                                @foreach ($packages as $package)
                                    <option value="{{ $package->id }}" class="bg-slate-900 text-white">
-                                       {{ $package->name }} - Rp {{ number_format($package->price, 0, ',', '.') }}
-                                       (Normal: Rp {{ number_format($package->original_price, 0, ',', '.') }})
+                                       {{ $package->name }} - Rp {{ number_format($package->price, 0, ',', '.') }} (Normal:
+                                       {{ collect(str_split('Rp ' . number_format($package->original_price, 0, ',', '.')))->map(fn($char) => $char . '̶')->join('') }})
                                    </option>
                                @endforeach
                            </select>
