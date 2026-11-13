@@ -23,7 +23,7 @@
                     </p>
 
                     <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <a href="#register"
+                        <a href="/register"
                             class="bg-white text-brand-950 hover:bg-slate-200 font-semibold py-3 px-7 rounded-md text-center transition-colors">
                             Mulai Sekarang
                         </a>
