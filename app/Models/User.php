@@ -4,6 +4,8 @@ namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Database\Factories\UserFactory;
+use Filament\Models\Contracts\FilamentUser;
+use Filament\Panel;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
 use Illuminate\Database\Eloquent\Attributes\Hidden;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -27,6 +29,8 @@ class User extends Authenticatable implements FilamentUser
      *
      * @return array<string, string>
      */
+
+
     protected function casts(): array
     {
         return [
@@ -54,5 +58,13 @@ class User extends Authenticatable implements FilamentUser
             ->latestOfMany();
     }
 
+    public function canAccessPanel(Panel $panel): bool
+    {
+        // Batasi agar role admin yg bisa akses
+
+        return $this->role === 'admin';
+
+
+    }
 
 }
