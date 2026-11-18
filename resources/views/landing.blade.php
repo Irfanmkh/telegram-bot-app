@@ -2,7 +2,7 @@
 
 @section('content')
     <!-- Hero Section -->
-    <section id="hero" class="relative min-h-screen flex flex-col justify-center overflow-hidden">
+    <section id="hero" class="relative min-h-screen flex flex-col justify-center overflow-hidden lg:-mt-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 

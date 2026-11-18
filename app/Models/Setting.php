@@ -18,4 +18,20 @@ class Setting extends Model
         $setting = self::where('key', $key)->first();
         return $setting ? $setting->value : $default;
     }
+
+    public static function isPromoAllAccessActive(): bool
+    {
+        $isActive = filter_var(static::get('promo_all_access', '1'), FILTER_VALIDATE_BOOLEAN);
+        $until = static::get('promo_all_access_until');
+
+        if (!$isActive) {
+            return false;
+        }
+
+        if (!empty($until) && now()->startOfDay()->gt(\Illuminate\Support\Carbon::parse($until)->endOfDay())) {
+            return false;
+        }
+
+        return true;
+    }
 }

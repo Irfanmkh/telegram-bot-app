@@ -23,4 +23,4 @@ Route::get('/register', function () {
 Route::get('/register', [RegisterController::class, 'index'])->name('regist');
 Route::post('/checkout', [RegisterController::class, 'process'])->name('checkout.process');
 Route::get('/checkout/{invoice_number}', [RegisterController::class, 'show'])->name('checkout.show');
-Route::post('/telegram/webhook', [TelegramWebhookController::class, 'handle'])->name('telegram.webhook');
+Route::post('api/telegram/webhook', [TelegramWebhookController::class, 'handle'])->name('telegram.webhook');
