@@ -201,6 +201,50 @@
                         <span class="text-brand-400 text-sm font-semibold uppercase tracking-wider">Sudan</span>
                     </div>
                 </div>
+                <!-- Partner 1 -->
+                <div
+                    class="bg-slate-900 border border-slate-800 hover:border-brand-500/40 rounded-2xl p-8 flex flex-col items-center text-center transition-all duration-300 shadow-sm">
+                    <div
+                        class="w-20 h-20 rounded-full bg-slate-800 border-2 border-slate-700 flex items-center justify-center mb-5 overflow-hidden">
+                        <!-- Gunakan tag <img> jika sudah ada foto: <img src="/images/yahya.jpg" class="w-full h-full object-cover"> -->
+                        <span class="text-2xl font-bold text-slate-500">AF</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-1">Annisa farikha</h3>
+                    <div class="inline-flex items-center gap-1.5 mt-2">
+                        <img src="/images/idn.png" alt="Bendera indonesia" class="w-7 h-7 inline-block align-middle" />
+                        <span class="text-brand-400 text-sm font-semibold uppercase tracking-wider">Indonesia</span>
+                    </div>
+                </div>
+
+                <!-- Partner 2 -->
+                <div
+                    class="bg-slate-900 border border-slate-800 hover:border-brand-500/40 rounded-2xl p-8 flex flex-col items-center text-center transition-all duration-300 shadow-sm">
+                    <div
+                        class="w-20 h-20 rounded-full bg-slate-800 border-2 border-slate-700 flex items-center justify-center mb-5 overflow-hidden">
+                        <!-- Gunakan tag <img> jika sudah ada foto -->
+                        <span class="text-2xl font-bold text-slate-500">ABP</span>
+                    </div>
+                    <h3 class="text-xl font-bold capitalize text-white mb-1">Ardhinto bagus Prakoso</h3>
+                    <div class="inline-flex items-center gap-1.5 mt-2">
+                        <img src="/images/idn.png" alt="Bendera indonesia" class="w-7 h-7 inline-block align-middle" />
+                        <span class="text-brand-400 text-sm font-semibold uppercase tracking-wider">Indonesia</span>
+                    </div>
+                </div>
+
+                <!-- Partner 3 -->
+                <div
+                    class="bg-slate-900 border border-slate-800 hover:border-brand-500/40 rounded-2xl p-8 flex flex-col items-center text-center transition-all duration-300 shadow-sm">
+                    <div
+                        class="w-20 h-20 rounded-full bg-slate-800 border-2 border-slate-700 flex items-center justify-center mb-5 overflow-hidden">
+                        <!-- Gunakan tag <img> jika sudah ada foto -->
+                        <span class="text-2xl font-bold text-slate-500">AA</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-1">Abdul Aziz</h3>
+                    <div class="inline-flex items-center gap-1.5 mt-2">
+                        <img src="/images/idn.png" alt="Bendera indonesia" class="w-7 h-7 inline-block align-middle" />
+                        <span class="text-brand-400 text-sm font-semibold uppercase tracking-wider">Indonesia</span>
+                    </div>
+                </div>
 
             </div>
         </div>
